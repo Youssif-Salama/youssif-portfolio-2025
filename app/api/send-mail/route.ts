@@ -1,6 +1,6 @@
 // app/api/send-mail/route.ts
 import { NextResponse } from "next/server";
-// @ts-ignore
+// @ts-expect-error
 import nodemailer from "nodemailer";
 
 const emailSender = process.env.EMAIL_USER;

@@ -1,5 +1,5 @@
 import SectionHead from "../../features/SectionHead"
-import { AppleStyleDock, GlowEffectCardBackground } from "./features/ContactFeatures"
+import {GlowEffectCardBackground } from "./features/ContactFeatures"
 
 const Contact = () => {
   return (

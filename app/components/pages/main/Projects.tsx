@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { DisclosureCard, ProjectTypeSwitcher } from "./features/ProjectFeatures";
+import {ProjectTypeSwitcher } from "./features/ProjectFeatures";
 import SectionHead from "../../features/SectionHead";
 
 const Projects = () => {

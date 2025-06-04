@@ -43,7 +43,7 @@ const Navbar = () => {
     } else {
       setFixedNav(false);
     }
-  }, [fixedNav, setFixedNav]);
+  }, [setFixedNav]);
   useEffect(() => {
     if(window.pageYOffset >100){setFixedNav(true)}
     window.addEventListener("scroll", () => {
@@ -52,7 +52,7 @@ const Navbar = () => {
     return () => {
       window.removeEventListener("scroll", handleWindowScrollWithNav);
     };
-  }, []);
+  }, [handleWindowScrollWithNav]);
   return (
     <nav
       className={`  left-0 z-[1000] ${

@@ -128,8 +128,10 @@ export function DisclosureTrigger({
               },
               className: cn(
                 className,
+                // @ts-expect-error
                 (child as React.ReactElement).props.className
               ),
+              // @ts-expect-error
               ...(child as React.ReactElement).props,
             })
           : child;

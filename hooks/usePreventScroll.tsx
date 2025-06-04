@@ -47,7 +47,6 @@ function chain(...callbacks: any[]): (...args: any[]) => void {
   };
 }
 
-// @ts-ignore
 const visualViewport = typeof document !== 'undefined' && window.visualViewport;
 
 export function isScrollable(node: Element): boolean {
@@ -296,13 +295,13 @@ function setStyle(
   value: string
 ) {
   // https://github.com/microsoft/TypeScript/issues/17827#issuecomment-391663310
-  // @ts-ignore
+  // @ts-expect-error
   let cur = element.style[style];
-  // @ts-ignore
+  // @ts-expect-error
   element.style[style] = value;
 
   return () => {
-    // @ts-ignore
+    // @ts-expect-error
     element.style[style] = cur;
   };
 }
@@ -314,11 +313,11 @@ function addEvent<K extends keyof GlobalEventHandlersEventMap>(
   handler: (this: Document, ev: GlobalEventHandlersEventMap[K]) => any,
   options?: boolean | AddEventListenerOptions
 ) {
-  // @ts-ignore
+  // @ts-expect-error
   target.addEventListener(event, handler, options);
 
   return () => {
-    // @ts-ignore
+    // @ts-expect-error
     target.removeEventListener(event, handler, options);
   };
 }
@@ -345,7 +344,7 @@ function scrollIntoView(target: Element) {
       }
     }
 
-    // @ts-ignore
+    // @ts-expect-error
     target = scrollable.parentElement;
   }
 }

@@ -32,7 +32,7 @@ const SideList = ({
         });
       }
     },
-    [handleOpenSideList]
+    [handleOpenSideList,setHomeState]
   );
 
   useEffect(() => {
@@ -40,7 +40,7 @@ const SideList = ({
     return () => {
       window.removeEventListener("click", handleClickOutSideTheSideBar);
     };
-  }, []);
+  }, [handleClickOutSideTheSideBar]);
 
   return (
     <div
