@@ -1,6 +1,6 @@
 import { Dock, DockIcon, DockItem, DockLabel } from "@/components/ui/dock";
 import { GlowEffect } from "@/components/ui/glow-effect";
-import { Github, Linkedin, Phone } from "lucide-react";
+import { Download, Github, Linkedin, Phone } from "lucide-react";
 import { useState } from "react";
 import { BsWhatsapp } from "react-icons/bs";
 import { TfiEmail } from "react-icons/tfi";
@@ -66,6 +66,7 @@ export function GlowEffectCardBackground() {
                   setMailData({ ...mailData, email: e.target.value })
                 }
                 value={mailData.email}
+                required
               />
               <label htmlFor="comments">Comment</label>
               <textarea
@@ -77,6 +78,7 @@ export function GlowEffectCardBackground() {
                   setMailData({ ...mailData, comments: e.target.value })
                 }
                 value={mailData.comments}
+                required
               />
               <div role="button" aria-label="Send"
                onClick={sendEmailData}
@@ -119,6 +121,12 @@ export function GlowEffectCardBackground() {
                   <Github />
                 </span>
                 <a href="https://github.com/Youssif-Salama">Youssif Salama</a>
+              </div>
+              <div className="flex items-center gap-4 bg-dark/50 backdrop-blur-2xl p-4 rounded-md ">
+                <span>
+                  <Download />
+                </span>
+                <a href="/cv.pdf">Download Resume</a>
               </div>
             </div>
           )}
