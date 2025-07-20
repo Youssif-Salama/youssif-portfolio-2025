@@ -45,7 +45,7 @@ const Home = () => {
                  overflow-hidden"
     >
       <img
-        src="/youssif.jpg"
+        src="/youssif.png"
         alt="Youssif Salama"
         className="rounded-full object-top object-cover w-[400px] h-[400px] 
                    max-md:w-[300px] max-md:h-[300px] 
