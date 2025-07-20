@@ -38,7 +38,7 @@ const Home = () => {
         <div className="flex-1 flex items-center justify-end">
           <div className="relative w-full h-full max-w-[400px] max-h-[400px] shadow-md shadow-main-purple flex items-center justify-end overflow-hidden rounded-full">
             <div
-              className="gradient-border rounded-full h-[400px] w-[400px]
+              className="gradient-border rounded-full
               max-md:h-[300px] max-md:w-[300px] max-sm:h-[250px] max-sm:w-[250px]
               flex items-center justify-end overflow-hidden
         shadow-inner shadow-main-blue
