@@ -47,7 +47,7 @@ const Home = () => {
               <img
                 src="/youssif.jpg"
                 alt="Youssif Salama"
-                className="rounded-full object-cover h-full w-full shadow-md shadow-main-blue"
+                className="rounded-full object-cover h-full w-full shadow-md shadow-main-blue translate-y-10"
               />
             </div>
           </div>
