@@ -38,7 +38,7 @@ const Home = () => {
         <div className="flex-1 flex items-center justify-end">
           <div className="relative w-full h-full max-w-[400px] max-h-[400px] shadow-md shadow-main-purple flex items-center justify-end overflow-hidden rounded-full">
             <div
-              className="gradient-border rounded-full
+              className="gradient-border rounded-full w-[400px]
               max-md:h-[300px] max-md:w-[300px] max-sm:h-[250px] max-sm:w-[250px]
               flex items-center justify-end overflow-hidden
         shadow-inner shadow-main-blue
@@ -47,7 +47,7 @@ const Home = () => {
               <img
                 src="/youssif.jpg"
                 alt="Youssif Salama"
-                className="rounded-full object-cover h-full w-full shadow-md shadow-main-blue translate-y-10"
+                className="rounded-full object-cover h-full w-full shadow-md shadow-main-blue translate-y-20"
               />
             </div>
           </div>
