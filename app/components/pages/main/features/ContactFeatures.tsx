@@ -120,7 +120,7 @@ export function GlowEffectCardBackground() {
                 <span>
                   <Github />
                 </span>
-                <a href="https://github.com/Youssif-Salama">Youssif Salama</a>
+                <a href="https://github.com/YoussifSalama">Youssif Salama</a>
               </div>
               <div className="flex items-center gap-4 bg-dark/50 backdrop-blur-2xl p-4 rounded-md ">
                 <span>
