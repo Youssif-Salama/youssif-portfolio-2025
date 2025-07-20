@@ -36,22 +36,26 @@ const Home = () => {
           </Link>
         </div>
         <div className="flex-1 flex items-center justify-end">
-          <div className="relative w-full h-full max-w-[400px] max-h-[400px] shadow-md shadow-main-purple flex items-center justify-end overflow-hidden rounded-full">
-            <div
-              className="gradient-border rounded-full w-[400px]
-              max-md:h-[300px] max-md:w-[300px] max-sm:h-[250px] max-sm:w-[250px]
-              flex items-center justify-end overflow-hidden
-        shadow-inner shadow-main-blue
-        "
-            >
-              <img
-                src="/youssif.jpg"
-                alt="Youssif Salama"
-                className="rounded-full object-cover h-full w-full shadow-md shadow-main-blue translate-y-20"
-              />
-            </div>
-          </div>
-        </div>
+  <div className="relative shadow-md shadow-main-purple rounded-full overflow-hidden">
+    <div
+      className="gradient-border rounded-full shadow-inner shadow-main-blue 
+                 w-[400px] h-[400px] 
+                 max-md:w-[300px] max-md:h-[300px] 
+                 max-sm:w-[250px] max-sm:h-[250px] 
+                 overflow-hidden"
+    >
+      <img
+        src="/youssif.jpg"
+        alt="Youssif Salama"
+        className="rounded-full object-top object-cover w-[400px] h-[400px] 
+                   max-md:w-[300px] max-md:h-[300px] 
+                   max-sm:w-[250px] max-sm:h-[250px] 
+                   shadow-md shadow-main-blue"
+      />
+    </div>
+  </div>
+</div>
+
       </div>
       <div className="mt-auto min-h-[25vh] flex items-center justify-center max-lg:overflow-hidden">
         <InversedInfiniteAutoScrollTechStackIcons />
