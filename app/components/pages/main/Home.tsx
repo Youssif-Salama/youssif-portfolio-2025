@@ -5,8 +5,8 @@ import RadialCircularBluredBlock from "../../features/RadialCircularBluredBlock"
 const Home = () => {
   return (
     <main className="min-h-screen flex flex-col gap-8 pt-8">
-      <RadialCircularBluredBlock position={{ top: -50, left: -50 }} />
-      <RadialCircularBluredBlock position={{ bottom: -50, right: -50 }} />
+      {/* <RadialCircularBluredBlock position={{ top: -50, left: -50 }} />
+      <RadialCircularBluredBlock position={{ bottom: -50, right: -50 }} /> */}
       <div
         className="min-h-[70vh] flex items-center justify-between max-md:flex-col-reverse gap-8"
       >

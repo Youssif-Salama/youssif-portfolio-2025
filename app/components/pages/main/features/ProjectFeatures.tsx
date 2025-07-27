@@ -319,6 +319,18 @@ export function ProjectTypeSwitcher() {
           techStacks: ["Next", "Tailwindcss", "Typescript"],
           role: "Frontend Developer - task",
         },
+         {
+          title: "osgie",
+          link: [
+            true,
+            false,
+            "https://osgie.com/",
+          ],
+          description: "Landing page, it allows users to explore the services offered by the website.",
+          img: "/projects/subPImages/osgie.png",
+          techStacks: ["Next", "Tailwindcss", "Typescript"],
+          role: "Frontend Developer - task",
+        },
       ],
     },
     {

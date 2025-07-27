@@ -6,27 +6,27 @@ import { BsWhatsapp } from "react-icons/bs";
 import { TfiEmail } from "react-icons/tfi";
 
 export function GlowEffectCardBackground() {
-  const [displayWhat, setDisplayWhat] = useState("email");
+  const [displayWhat, setDisplayWhat] = useState("phone");
   const [mailData, setMailData] = useState({
     email: "",
     comments: "",
   });
   const sendEmailData = async () => {
-  const res = await fetch("/api/send-mail", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      email: mailData.email,
-      comment: mailData.comments,
-    }),
-  });
+    const res = await fetch("/api/send-mail", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        email: mailData.email,
+        comment: mailData.comments,
+      }),
+    });
 
-  const result = await res.json();
-  result && setMailData({ email: "", comments: "" });
-  window.alert(result.message);
-};
+    const result = await res.json();
+    result && setMailData({ email: "", comments: "" });
+    window.alert(result.message);
+  };
 
   return (
     <div className="relative w-full h-[500px]">
@@ -81,8 +81,8 @@ export function GlowEffectCardBackground() {
                 required
               />
               <div role="button" aria-label="Send"
-               onClick={sendEmailData}
-               className="bg-main-blue py-4 rounded-md shadow-inner shadow-main-purple w-full text-center cursor-pointer">
+                onClick={sendEmailData}
+                className="bg-main-blue py-4 rounded-md shadow-inner shadow-main-purple w-full text-center cursor-pointer">
                 Send
               </div>
             </form>
@@ -126,7 +126,7 @@ export function GlowEffectCardBackground() {
                 <span>
                   <Download />
                 </span>
-                <a href="/cv.pdf">Download Resume</a>
+                <a href="https://drive.google.com/file/d/1na4drFVuuS1D_CINYAR8_aj2K9qxnrAG/view?usp=sharing">Download Resume</a>
               </div>
             </div>
           )}

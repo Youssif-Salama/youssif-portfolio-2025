@@ -18,10 +18,10 @@ export default function Main() {
         setHomeState={setHomeState}
       />
       <Home />
-      <About/>
-      <TechStack/>
-      <Projects/>
-      <Contact/>
+      <About />
+      <TechStack />
+      <Projects />
+      <Contact />
     </div>
   );
 }

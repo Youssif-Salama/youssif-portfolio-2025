@@ -61,7 +61,7 @@ const Navbar = () => {
     >
       <div
         className={`
-        container mx-auto flex items-center justify-between gap-64 p-4 bg-dark
+        container mx-auto flex items-center justify-between  p-4 bg-dark
         ${
           fixedNav &&
           "rounded-lg shadow-main-blue shadow-md bg-dark"
@@ -69,7 +69,7 @@ const Navbar = () => {
         `}
       >
         <Link href="/">
-          <h1 className="text-3xl font-bold gradient-heading bg-clip-text text-transparent max-sm:text-2xl max-w-xs:text-xl">
+          <h1 className="text-3xl text-nowrap font-bold gradient-heading bg-clip-text text-transparent max-sm:text-2xl max-w-xs:text-xl">
             {"{"} JURO {"}"}
           </h1>
         </Link>
