@@ -126,7 +126,7 @@ export function GlowEffectCardBackground() {
                 <span>
                   <Download />
                 </span>
-                <a href="https://github.com/YoussifSalama/NextJsYoussifSalamaPortfolio.git">Download Resume</a>
+                <a href="https://drive.google.com/file/d/19iZQ-h1qAgz9hwpPYjoCIZVhhaFqxbT7/view">Download Resume</a>
               </div>
             </div>
           )}
